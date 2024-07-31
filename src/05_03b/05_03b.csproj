@@ -8,4 +8,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.16.2" />
+    <PackageReference Include="Microsoft.SemanticKernel.Experimental.Agents" Version="1.16.2-alpha" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Agents\**\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
